@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class DoorsTest {
 
-    public static int[] verify(){
+    public static int[] verify() {
       int[] answer = new int[100];
       int i;		
       for(i = 1; i < 101; i++){
@@ -14,9 +14,9 @@ public class DoorsTest {
          }else{
             answer[i-1] = 1;
          }
-      }
+        }
         return answer;
-   } 
+    } 
 
     @Test
     public void door_status100() {
@@ -30,18 +30,7 @@ public class DoorsTest {
 
         answer = this.verify();
 
-System.out.println(Arrays.toString(answer));
-System.out.println(Arrays.toString(d));
-
         assertArrayEquals(d, answer);
-         
-
-        //for(int i = 1; i < 101; i++){
-        //    sqrt = Math.sqrt(i);
-        //    assertEquals((sqrt != (int)sqrt), (d[i-1] == 1));
-        //} 
-        //assertEquals(1, d[0]);
-        //assertEquals(0, d[d.length-1]);
     }
 }
 
